@@ -1,0 +1,25 @@
+name: ai-orchestration
+channels:
+    - conda-forge
+dependencies:
+    # AI Orchestration - Core
+    - python=3.11
+    - pip
+    - langchain
+    - langchain-openai
+    - langchain-community
+    - llama-index
+    - openai
+
+    # Others
+    - requests
+    - black
+    - tweepy
+    - flask
+    - python-dotenv
+    - pydantic=1.10.13
+
+    # These will be installed using pip - PackagesNotFoundError with conda-forge
+    - pip:
+        - google-search-results
+        - install
